@@ -1,0 +1,41 @@
+h1 {
+	font-size: 3em;
+	line-height: 1;
+	margin-bottom: 0.50em;
+}
+h2 {
+	font-size: 2em;
+	margin-bottom: 0.75em;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 1;
+	margin-bottom: 1.00em;
+}
+h4 {
+	font-size: 1.2em;
+	line-height: 1.25;
+	margin-bottom: 1.25em;
+}
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 1.50em;
+}
+h6 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+a {
+	@include color_anchors;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+p {
+	line-height: 1.4em;
+	font-size: 14px;
+}

@@ -1,0 +1,56 @@
+$blueprint-grid-columns: 16;
+$blueprint-container-size: 940px;
+$blueprint-grid-margin: 20px;
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+$blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
+
+body {
+	@include color_body;
+}
+
+#page {
+	@include container;
+	@include color_main_container;
+
+	#content {
+		@include column(7, true);
+		@include color_content;
+
+		padding: span(1);
+		margin-bottom: 20px;
+
+		h2 {
+			margin-top: 75px;
+		}
+	}
+	#sidebar {
+		@include column(6);
+
+		.logo {
+			@include column(4);
+			@include push(1);
+			padding: 50px 0 0 10px;
+			margin-bottom: 30px;
+		}
+
+		.widget {
+			@include column(4);
+			@include push(1);
+			@include color_sidebar_widget;
+			@include border-radius(7px);
+
+			.navigation {
+				margin: 10px;
+			}
+		}
+	}
+	#footer {
+		@include column(16, true);
+		@include color_footer;
+
+		padding: 0px 10px;
+		margin-bottom: 20px;
+		font-size: 12px;
+		line-height: 25px;
+	}
+}

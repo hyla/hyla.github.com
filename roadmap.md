@@ -31,4 +31,4 @@ The application should start becoming useful at this point. The settings pages w
 
 - Tracker plugin
 
-We cam start focusing on useful features now and putting a lot more polish on the Tracker will allow us to [eat our own dog food](http://www.codinghorror.com/blog/2009/01/the-ultimate-dogfooding-story.html). Hyla will already have a tracker plugin by this release but polishing it will help us find limitations in the plugin system before it's too late.
+We can start focusing on useful features now and putting a lot more polish on the Tracker will allow us to [eat our own dog food](http://www.codinghorror.com/blog/2009/01/the-ultimate-dogfooding-story.html). Hyla will already have a tracker plugin by this release but polishing it will help us find limitations in the plugin system before it's too late.
